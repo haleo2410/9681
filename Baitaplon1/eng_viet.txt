@@ -1,0 +1,21 @@
+﻿ hello	Xin chào
+ student	Học sinh
+ candy	Cục kẹo
+ school	Trường học
+ cat	Con mèo
+ dog 	Con chó
+ Information	Thông tin
+ fish	Con cá
+ class	Lớp
+ tree	Cây
+ happy	Vui mừng 
+ superbly	Tuyệt vời
+ ripely	Chín muồi
+ yardman	Người làm vườn
+ willingness	Sự sẵn lòng
+ beautiful	Đẹp
+ teacher	Giáo viên
+ jam	Mứt
+ cooked	Nấu chín
+ minimally	Tối thiểu
+ claimed	Đã tuyên bố

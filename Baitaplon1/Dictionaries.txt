@@ -1,0 +1,4 @@
+1dog	cho
+2cat	meo
+3hello	xin chao
+4good	tot
