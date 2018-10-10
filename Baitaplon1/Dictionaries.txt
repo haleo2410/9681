@@ -1,4 +1,89 @@
-1dog	cho
-2cat	meo
-3hello	xin chao
-4good	tot
+﻿ dog	con chó
+ cat	con mèo
+ fish	con cá
+ school	 trường học
+ good	tốt
+ hotel	khách sạn
+ museum	viện bảo tàng
+ bank	ngân hành
+ stadium	sân vận động
+ across	băng qua 
+ into	vào
+ over	ở trên
+ round	vòng 
+ through	xuyên qua
+ up	lên
+ next to	bên cạnh
+ betwen	ở giữa
+ behind	phía sau
+ under	dưới
+ patient	kiên nhẫn, nhẫn nại
+ shy	nhát, rụt rè
+ bossy	hách dịch, người thích chỉ huy
+ honest	trung thực
+ strict	nghiêm khắc 
+ romantic	lãng mạng
+ ambitious	tham vọng
+ sensitive	nhạy cảm
+ pessimistic	bi quan
+ homorous	hài hước
+ generous	hào phóng
+ optimistic	lạc quan
+ warm-heartead	ấm áp
+ bad-tempered	nóng tính
+ hard-working	chăm chỉ
+ fun-loving	vui nhộn
+ careful	cẩn thận
+ cheerful	vui vẻ
+ funny	vui vẻ
+ easy going	dễ gần
+ out going	cởi mở
+ soft	dịu dàng
+ friendly	thân thiện
+ kind	tốt bụng
+ polise	lịch sự
+ quiet	ít nói
+ sociable	hòa đồng
+ talented	tài năng, có tài
+ cautious	thận trọng
+ competive	cạnh tranh
+ confident	tự tin
+ serious	nghiêm túc
+ creative	sáng tạo 
+ dependable	đáng tin cậy
+ enthusiastic	nhiệt tình
+ extroverted	hướng ngoại 
+ introverted	hướng nội
+ imaginative	giàu trí tưởng tượng
+ observant 	tinh ý
+ rational 	có chừng mực, có lý trí
+ sincere	thành thật
+ wise	thông thái, uyên bác
+ clever	khéo léo
+ understanding	hiểu biết
+ faithful	chung thủy
+ gentle	nhẹ nhàng
+ loyal	trung thành
+ boring	buồn chán
+ careless	cẩu thả
+ mean	keo kiệt
+ stupid	ngu ngốc
+ aggressive	hung hăng
+ reckless	hấp tấp
+ stubborn	bướng bỉnh
+ selfish	ích kỷ
+ hot-temper	nóng tính
+ cold	lạnh lùng
+ mad	điên, khùng
+ gruff	thô lỗ, cục cằn
+ boast	khoe khoang
+ go straight	đi thẳng
+ go along	đi thẳng
+ not far	không xa
+ traffic lights	đèn giao thông
+ car	xe
+ car park	bãi đậu xe
+ parking lot	bãi đậu xe
+ a going	đang chạy, đang chuyển động
+ book	sách
+

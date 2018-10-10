@@ -17,7 +17,8 @@ public class Main {
         Dictionary d = new Dictionary();
         d.Init();
         DictionaryCommandline dc = new DictionaryCommandline();
-        dc.dictionaryBasic(d);
-      
+        //dc.dictionaryAdvanced(d);
+        //dc.dictionaryAdd(d);
+        dc.delete(d);
     }
 }

@@ -14,8 +14,7 @@ import java.io.Serializable;
 public class Word implements Serializable{
     private String word_target;
     private String word_explain;
-
-
+    
     public String getWord_target() {
         return word_target;
     }
@@ -36,6 +35,11 @@ public class Word implements Serializable{
     {
         this.word_target = word_target;
         this.word_explain = word_explain;
+    }
+   
+    @Override
+    public String toString(){
+       return (this.getWord_target() + "\t" +this.getWord_explain());
     }
     
 }
