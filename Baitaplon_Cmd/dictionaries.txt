@@ -1,0 +1,85 @@
+a going	dang chay, dang chuyen dong
+across	bang qua 
+aggressive	hung hang
+ambitious	tham vong
+bank	ngan hang
+behind	phia sau
+betwen	o giua
+boast	khoe khoang
+book	sach
+boring	buon chan
+bossy	hach dich, nguoi thich chi huy
+car	xe
+car park	bai dau xe
+careful	can than
+careless	cau tha
+cautious	than trong
+cheerful	vui ve
+chicken	con ga
+clever	kheo leo
+cold	lanh lung
+competive	canh tranh
+confident	tu tin
+creative	sang tao 
+dependable	dang tin cay
+dog	con cho
+easy going	de gan
+enthusiastic	nhiet tinh
+extroverted	huong ngoai 
+faithful	chung thuy
+friendly	than thien
+funny	vui ve
+generous	hao phong
+gentle	nhe nhang
+go along	di thang
+go straight	di thang
+good	tot
+goodbye	tam biet
+gruff	tho lo, cuc can
+homorous	hai huoc
+honest	trung thuc
+hotel	khach san
+imaginative	giau tri tuong tuong
+into	vao
+introverted	huong noi
+kind	tot bung
+loyal	trung thanh
+mad	dien, khung
+mean	keo kiet
+museum	vien bao tang
+next to	ben canh
+not far	khong xa
+observant 	tinh y
+optimistic	lac quan
+out going	coi mo
+over	o tren
+parent	bo me
+parking lot	bai dau xe
+patient	kien nhan, nhan nai
+pessimistic	bi quan
+polise	lich su
+quiet	it noi
+rational 	co chung muc, co ly tri
+reckless	hap tap
+romantic	lang man
+round	vong 
+school	truong hoc
+selfish	ich ky
+sensitive	nhay cam
+serious	nghiem tuc
+shy	nhat, rut re
+sincere	thanh that
+sociable	hoa dong
+soft	diu dang
+stadium	san van dong
+strict	nghiem khac 
+stubborn	buong binh
+student	hoc sinh
+stupid	ngu ngoc
+talented	tai nang, co tai
+through	xuyen qua
+traffic lights	den giao thong
+under	duoi
+understanding	hieu biet
+up	len
+wise	thong thai, uyen bac
