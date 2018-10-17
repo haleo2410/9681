@@ -65,13 +65,15 @@ public class GraphicsNetBeans extends javax.swing.JFrame {
         EXIT = new javax.swing.JButton();
         RESET = new javax.swing.JButton();
         REPAIR = new javax.swing.JButton();
-        AmThanh = new javax.swing.JButton();
+        LISTENOutputSearch = new javax.swing.JButton();
         VietEng = new javax.swing.JRadioButton();
         InputSearch = new javax.swing.JTextField();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
+        OutputSearch = new javax.swing.JTextArea();
         jScrollPane2 = new javax.swing.JScrollPane();
         ListDS = new javax.swing.JList<>();
+        LISTENSearch = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
         JMenuBar = new javax.swing.JMenuBar();
         File = new javax.swing.JMenu();
         Add = new javax.swing.JMenuItem();
@@ -83,6 +85,7 @@ public class GraphicsNetBeans extends javax.swing.JFrame {
         setBackground(new java.awt.Color(153, 0, 153));
         setName("DICTIONARY"); // NOI18N
 
+        setLocationRelativeTo(null);
         ManHinh.setBackground(new java.awt.Color(204, 204, 255));
 
         DICTIONARY.setFont(new java.awt.Font("Times New Roman", 1, 48)); // NOI18N
@@ -90,7 +93,9 @@ public class GraphicsNetBeans extends javax.swing.JFrame {
         DICTIONARY.setText("DICTIONARY");
 
         TimKiem.setBackground(new java.awt.Color(255, 255, 255));
+        TimKiem.setFont(new java.awt.Font("Times New Roman", 1, 13)); // NOI18N
         TimKiem.setIcon(new javax.swing.ImageIcon("C:\\Users\\Ha\\Documents\\GitHub\\No_Name_OOP\\Baitaplon1\\image\\search.jpg")); // NOI18N
+        TimKiem.setText("Search");
         TimKiem.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 TimKiemActionPerformed(evt);
@@ -114,9 +119,9 @@ public class GraphicsNetBeans extends javax.swing.JFrame {
         ADD.setFont(new java.awt.Font("Times New Roman", 1, 13)); // NOI18N
         ADD.setForeground(new java.awt.Color(51, 0, 51));
         ADD.setIcon(new javax.swing.ImageIcon("C:\\Users\\Ha\\Documents\\GitHub\\No_Name_OOP\\Baitaplon1\\image\\add.jpg")); // NOI18N
+        ADD.setMnemonic('A');
         ADD.setText(" ADD");
         ADD.setToolTipText("Click vào nút này hoặc nhấn Alt+A để Thêm Từ Mới");
-        ADD.setMnemonic(KeyEvent.VK_A);
         ADD.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 ADDMouseClicked(evt);
@@ -170,17 +175,19 @@ public class GraphicsNetBeans extends javax.swing.JFrame {
             }
         });
 
-        AmThanh.setIcon(new javax.swing.ImageIcon("C:\\Users\\Ha\\Documents\\GitHub\\No_Name_OOP\\Baitaplon1\\image\\volum.png")); // NOI18N
-        AmThanh.setToolTipText("Click vào nút này để Nghe");
-        AmThanh.addActionListener(new java.awt.event.ActionListener() {
+        LISTENOutputSearch.setBackground(new java.awt.Color(255, 255, 255));
+        LISTENOutputSearch.setIcon(new javax.swing.ImageIcon("C:\\Users\\Ha\\Documents\\GitHub\\No_Name_OOP\\Baitaplon1\\image\\volum.png")); // NOI18N
+        LISTENOutputSearch.setToolTipText("Nghe");
+        LISTENOutputSearch.setToolTipText("Click vào nút này để Nghe");
+        LISTENOutputSearch.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                AmThanhActionPerformed(evt);
+                LISTENOutputSearchActionPerformed(evt);
             }
         });
 
         VietEng.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         VietEng.setForeground(new java.awt.Color(51, 51, 0));
-        VietEng.setText("Việt - Anh");
+        VietEng.setText("Vietnamese - English");
         VietEng.setToolTipText("Click nút này để chuyển từ Việt - Anh");
         VietEng.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -188,9 +195,9 @@ public class GraphicsNetBeans extends javax.swing.JFrame {
             }
         });
 
-        InputSearch.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
+        InputSearch.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         InputSearch.setForeground(new java.awt.Color(153, 153, 153));
-        InputSearch.setText("Tra từ Anh-Việt...");
+        InputSearch.setText(" Tra từ Anh-Việt...");
         InputSearch.setToolTipText("Click để Nhập từ cần tra ");
         InputSearch.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         InputSearch.addFocusListener(new java.awt.event.FocusAdapter() {
@@ -212,10 +219,10 @@ public class GraphicsNetBeans extends javax.swing.JFrame {
             }
         });
 
-        jTextArea1.setBackground(new java.awt.Color(255, 255, 204));
-        jTextArea1.setColumns(20);
-        jTextArea1.setRows(5);
-        jScrollPane1.setViewportView(jTextArea1);
+        OutputSearch.setBackground(new java.awt.Color(255, 255, 204));
+        OutputSearch.setColumns(20);
+        OutputSearch.setRows(5);
+        jScrollPane1.setViewportView(OutputSearch);
 
         ListDS.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         ListDS.addAncestorListener(new javax.swing.event.AncestorListener() {
@@ -234,6 +241,22 @@ public class GraphicsNetBeans extends javax.swing.JFrame {
         });
         jScrollPane2.setViewportView(ListDS);
 
+        LISTENSearch.setBackground(new java.awt.Color(255, 255, 255));
+        LISTENSearch.setFont(new java.awt.Font("Times New Roman", 1, 13)); // NOI18N
+        LISTENSearch.setIcon(new javax.swing.ImageIcon("C:\\Users\\Ha\\Documents\\GitHub\\No_Name_OOP\\BTL_Graphic\\image\\volum.png")); // NOI18N
+        LISTENSearch.setMnemonic('L');
+        LISTENSearch.setText("LISTEN");
+        LISTENSearch.setToolTipText("Nghe");
+        LISTENSearch.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                LISTENSearchActionPerformed(evt);
+            }
+        });
+
+        jLabel1.setFont(new java.awt.Font("Times New Roman", 2, 36)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(204, 0, 204));
+        jLabel1.setText("By No_Name Team");
+
         javax.swing.GroupLayout ManHinhLayout = new javax.swing.GroupLayout(ManHinh);
         ManHinh.setLayout(ManHinhLayout);
         ManHinhLayout.setHorizontalGroup(
@@ -244,64 +267,81 @@ public class GraphicsNetBeans extends javax.swing.JFrame {
                     .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 247, Short.MAX_VALUE)
                     .addComponent(InputSearch))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(ManHinhLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, ManHinhLayout.createSequentialGroup()
+                        .addGap(34, 34, 34)
+                        .addComponent(EXIT, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(TimKiem, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(LISTENSearch, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(ADD, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(RESET, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(REPAIR, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(DELETE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(ManHinhLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane1)
                     .addGroup(ManHinhLayout.createSequentialGroup()
-                        .addComponent(DICTIONARY, javax.swing.GroupLayout.PREFERRED_SIZE, 333, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap())
-                    .addGroup(ManHinhLayout.createSequentialGroup()
-                        .addGroup(ManHinhLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(ManHinhLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(DELETE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(RESET, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(REPAIR, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(ADD, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                            .addGroup(ManHinhLayout.createSequentialGroup()
-                                .addGap(31, 31, 31)
-                                .addComponent(EXIT, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(TimKiem, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(ManHinhLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jScrollPane1)
-                            .addGroup(ManHinhLayout.createSequentialGroup()
-                                .addComponent(VietEng, javax.swing.GroupLayout.PREFERRED_SIZE, 247, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 145, Short.MAX_VALUE)
-                                .addComponent(AmThanh, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))))))
+                        .addComponent(VietEng, javax.swing.GroupLayout.PREFERRED_SIZE, 247, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(LISTENOutputSearch, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))))
+            .addGroup(ManHinhLayout.createSequentialGroup()
+                .addGap(223, 223, 223)
+                .addComponent(DICTIONARY, javax.swing.GroupLayout.PREFERRED_SIZE, 333, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(258, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ManHinhLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel1)
+                .addGap(45, 45, 45))
         );
         ManHinhLayout.setVerticalGroup(
             ManHinhLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(ManHinhLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(DICTIONARY, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addGroup(ManHinhLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(ManHinhLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(ManHinhLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(TimKiem)
-                            .addComponent(InputSearch, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addComponent(AmThanh, javax.swing.GroupLayout.Alignment.TRAILING))
-                    .addComponent(VietEng))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(ManHinhLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                .addGroup(ManHinhLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(ManHinhLayout.createSequentialGroup()
+                        .addGap(50, 50, 50)
+                        .addGroup(ManHinhLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(TimKiem)
+                            .addComponent(InputSearch, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(ManHinhLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel1)
+                        .addGap(3, 3, 3)
+                        .addGroup(ManHinhLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(LISTENOutputSearch)
+                            .addComponent(VietEng))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(ManHinhLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(ManHinhLayout.createSequentialGroup()
+                        .addComponent(LISTENSearch)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(ADD)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(RESET, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(REPAIR, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(DELETE, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(ADD)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 261, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(REPAIR, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 217, Short.MAX_VALUE)
                         .addComponent(EXIT, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jScrollPane2)
-                    .addComponent(jScrollPane1))
-                .addGap(59, 59, 59))
+                    .addComponent(jScrollPane1)
+                    .addComponent(jScrollPane2))
+                .addContainerGap())
         );
 
         File.setText("File");
         File.setMnemonic(KeyEvent.VK_F);
 
+        Add.setIcon(new javax.swing.ImageIcon("C:\\Users\\Ha\\Documents\\GitHub\\No_Name_OOP\\BTL_Graphic\\image\\add.jpg")); // NOI18N
+        Add.setMnemonic('A');
         Add.setText("Add");
         ADD.setMnemonic(KeyEvent.VK_A);
+        Add.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AddActionPerformed(evt);
+            }
+        });
         File.add(Add);
 
         jMenuItem1.setText("New");
@@ -322,7 +362,7 @@ public class GraphicsNetBeans extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(ManHinh, javax.swing.GroupLayout.PREFERRED_SIZE, 616, Short.MAX_VALUE)
+            .addComponent(ManHinh, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         ManHinh.getAccessibleContext().setAccessibleName("");
@@ -331,12 +371,17 @@ public class GraphicsNetBeans extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void DELETEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DELETEActionPerformed
+        int delete =  JOptionPane.showConfirmDialog(rootPane, "Bạn có chac muon Xoa không? ","Thông báo!",JOptionPane.YES_NO_CANCEL_OPTION);
+        if(delete == JOptionPane.YES_OPTION){  
+            System.exit(0);
+        }
         
-        // TODO add your handling code here:
     }//GEN-LAST:event_DELETEActionPerformed
 
     private void ADDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ADDActionPerformed
-     /*
+        new add_frame().setVisible(true);
+        this.setVisible(false);
+        /*
      
 // add word to listds
 String add = InputSearch.getText();
@@ -402,18 +447,18 @@ String add = InputSearch.getText();
     }//GEN-LAST:event_InputSearchActionPerformed
 
     private void InputSearchFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_InputSearchFocusGained
-        if(InputSearch.getText().equals("Tra từ Anh-Việt..."))
+        if(InputSearch.getText().equals(" Tra từ Anh-Việt..."))
           {
-             InputSearch.setText("");
+             InputSearch.setText(" ");
          }
          InputSearch.setForeground(Color.black);
         
     }//GEN-LAST:event_InputSearchFocusGained
 
     private void InputSearchFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_InputSearchFocusLost
-         if(InputSearch.getText().equals(""))
+         if(InputSearch.getText().equals(" "))
          {
-             InputSearch.setText("Tra từ Anh-Việt...");
+             InputSearch.setText(" Tra từ Anh-Việt...");
          }
          
          InputSearch.setForeground(new Color(153,153,153));
@@ -443,14 +488,29 @@ String add = InputSearch.getText();
         // TODO add your handling code here:
     }//GEN-LAST:event_ListDSMouseClicked
 
-    private void AmThanhActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AmThanhActionPerformed
-       Voice voice ;
+    private void LISTENOutputSearchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LISTENOutputSearchActionPerformed
+        System.setProperty("mbrola.base", "C:\\Users\\Ha\\Documents\\GitHub\\No_Name_OOP\\BTL_Graphic\\mbrola");
+        Voice voice ;
         VoiceManager vm = VoiceManager.getInstance();
-        voice = vm.getVoice("kevin16");
+        voice = vm.getVoice("mbrola_us1");
         voice.allocate();
         voice.speak(InputSearch.getText());
         
-    }//GEN-LAST:event_AmThanhActionPerformed
+    }//GEN-LAST:event_LISTENOutputSearchActionPerformed
+
+    private void LISTENSearchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LISTENSearchActionPerformed
+        System.setProperty("mbrola.base", "C:\\Users\\Ha\\Documents\\GitHub\\No_Name_OOP\\BTL_Graphic\\mbrola");
+        Voice voice ;
+        VoiceManager vm = VoiceManager.getInstance();
+        voice = vm.getVoice("mbrola_us1");
+        voice.allocate();
+        voice.speak(InputSearch.getText());
+    }//GEN-LAST:event_LISTENSearchActionPerformed
+
+    private void AddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AddActionPerformed
+        new add_frame().setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_AddActionPerformed
 
 
     
@@ -485,7 +545,6 @@ String add = InputSearch.getText();
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton ADD;
     private javax.swing.JMenuItem Add;
-    private javax.swing.JButton AmThanh;
     private javax.swing.JButton DELETE;
     private javax.swing.JLabel DICTIONARY;
     private javax.swing.JButton EXIT;
@@ -493,16 +552,19 @@ String add = InputSearch.getText();
     private javax.swing.JMenu File;
     private javax.swing.JTextField InputSearch;
     private javax.swing.JMenuBar JMenuBar;
+    private javax.swing.JButton LISTENOutputSearch;
+    private javax.swing.JButton LISTENSearch;
     private javax.swing.JList<String> ListDS;
     private javax.swing.JPanel ManHinh;
+    private javax.swing.JTextArea OutputSearch;
     private javax.swing.JButton REPAIR;
     private javax.swing.JButton RESET;
     private javax.swing.JButton TimKiem;
     private javax.swing.JRadioButton VietEng;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JTextArea jTextArea1;
     // End of variables declaration//GEN-END:variables
 
 }
