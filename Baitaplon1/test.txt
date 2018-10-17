@@ -1,3 +1,0 @@
-dog	cho
-cat	meo
-pain	dau don
