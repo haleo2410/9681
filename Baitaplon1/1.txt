@@ -1,0 +1,5 @@
+good	tot
+hello	xin chao
+bye	tam biet
+cat	meo
+dog	cho

@@ -10,12 +10,7 @@ import java.util.ArrayList;
  * @author Nguyen Ba Duc
  */
 public class Dictionary {
-    private  ArrayList<Word> word;
-    
-    public void Init(){
-        word = new ArrayList<>();
-    }
-    
+    private  ArrayList<Word> word = new ArrayList();
     
     public ArrayList<Word> getWord() {
         return word;

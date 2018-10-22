@@ -1,0 +1,259 @@
+﻿across	băng qua
+aggressive	hung hăng
+ambitious	tham vọng
+bank	ngân hàng
+behind	phía sau
+betwen	ở giữa
+boast	khoe khoang
+book	sách
+boring	buồn chán
+bossy	hách dịch, người thích chỉ huy
+car	xe
+car park	bãi đẫu xe
+careful	cẩn thận
+careless	cẩu thả
+cautious	thận trọng
+cheerful	vui vẻ
+chicken	con gà
+clever	khéo léo
+cold	lạnh lùng
+competive	cạnh tranh
+confident	tự tin
+creative	sáng tạo 
+dependable	đáng tin cậy
+dog	con chó
+easy going	dễ gần
+enthusiastic	nhiệt tình
+extroverted	hướng ngoại 
+faithful	chung thủy
+friendly	thân thiện
+funny	vui vẻ
+generous	hào phóng
+gentle	nhẹ nhàng
+go along	đi thẳng
+go straight	đi thẳng
+good	tốt
+goodbye	tam biệt
+gruff	thô lỗ, cục cằn
+homorous	hài hước
+honest	trung thực
+hotel	khách sạn
+imaginative	giàu trí tưởng tượnng
+into	vào
+introverted	hướng nội
+kind	tốt bụng
+loyal	trung thành
+mad	điên, khùng
+mean	keo kiệt
+museum	viện bảo tàng
+next to	bên cạnh
+not far	không xa
+observant 	tinh ý
+optimistic	lạc quan
+out going	cởi mở
+over	ở trên
+parent	bố mẹ
+parking lot	bãi đậu xe
+patient	kiên nhẫn, nhẫn nại
+pessimistic	bi quan
+polise	lịch sự
+quiet	ít nói
+rational 	có chừng mực, có lý trí
+reckless	hấp tấp
+romantic	lãng mạn
+round	vòng 
+school	trường học
+selfish	ích kỷ
+sensitive	nhạy cảm
+serious	nghiêm túc
+shy	nhát, rụt rè
+sincere	thành thật
+sociable	hòa đồng
+soft	dịu dàng
+stadium	sân vân động
+strict	nghiêm khắc 
+stubborn	bướng bỉnh
+student	học sinh
+stupid	ngu ngốc
+talented	tài năng, có tài
+through	xuyên qua
+traffic lights	đèn giao thông
+under	dưới
+understanding	hiểu biết
+up	lên
+wise	thông thái, uyên bác
+a font	thấu triệt, cặn kẽ, rõ ngọn ngành
+a-road đường lớn, không quan trọng bằng xa lộ
+agreement 	sự thỏa thuận
+assurance	đảm bảo, chắc chắn
+cancellation 	sự bãi bỏ, hủy bỏ
+determine 	quyết định, xác định, định rõ
+engage	tham gia, cam kết
+obligate	bắt buộc, ép buộc
+party	đảng, phái, nhóm
+about	khoảng chừng,gần
+after	sau, đằng sau, sau khi
+again	lại, lần nữa
+air	không khí, bầu không khí
+all	tất cả, hết thảy, toàn bộ
+also	cũng, cũng vậy
+an	một, một(nào đó)
+and	và, cùng, với, còn
+another	khác
+any	bất cứ việc gì, bất cứ ai(ý khẳng định)
+as	khi, lúc, do, bởi
+at	ở tại (chỉ vị trí, khoảng cách), vào lúc(chỉ thời gian)
+away	xa, xa cách, biến mất
+back	lưng, đằng sau, mặt sau
+be	thì, là
+because	vì, bởi vì
+been	thì, là
+both	cả hai
+but	nhưng, trừ ra, ngoài ra
+by	gần, bằng, bởi
+came	đến, tới, tới bến
+can	có thể, có khả năng
+come	đến, đi, đi đến
+could 	có thể
+day	ban ngày, ngày
+did	quá khứ của do
+different	khác, khác biệt, khác nhau
+do	làm, thực hiện
+down	xuống, bỏ xuống, giảm bớt
+each	mỗi người, mỗi vật, mỗi cái
+end	kết thúc, chấm dứt, đoạn cuối
+even	ngay cả,ngay
+every	mỗi, mọi
+few	ít, vài
+find	thấy, tìm thấy, tìm ra
+first	thứ nhất, đầu tiê, trước tiên
+for	thay cho, thế cho, đại diện cho
+from	từ (đâu), tách khỏi, dựa vào
+get	được, có được, kiếm được
+give	cho, biếu, tặng
+go	đi, đi đến, đi tới
+great	tuyệt,to lớn, vĩ đại
+have 	có, nhận được,biết được
+help	giúp đõ, cứu giúp
+here	đây, ở đây, ở chỗ này
+him	hắn, ông ấy, anh ấy, nó
+his	của nó, của hắn, của ông ấy, của anh ấy
+home	nhà, chỗ ở
+house 	nhà ở, căn nhà, tòa nhà
+how	thế nào, như thế nào, làm sao
+I	tôi, ta, tao, tớ, mình
+if	nếu, nếu như
+it	cái đó, điều đó, con vật đó, nó
+its	của cái đó,của  điều đó,của  con vật đó,của  nó
+just	vừa mới, chỉ, chính
+know	biết, hiểu biết
+large 	rộng, lớn, to
+last	cuối cùng, sau chót
+like	thích
+line	hàng, đường dây, đường kẻ
+little	nhỏ bé, bé bỏng
+look	nhìn, xem, ngó
+make	làm, chế tạo
+man	đàn ông, nam nhi
+many	nhiều
+may	có thể, có lẽ
+me	tôi, tao, tớ
+more	nhiều hơn, lớn hơn, đông hơn
+most	lớn nhất, nhiều nhất
+Mr	danh hiệu chỉ một người đàn ông, ông
+must	phải, cần phải, nên
+my	tôi
+name	tên, danh tánh
+never	không bao giờ, chẳng bao giờ
+new	mới, mới mẻ, mới lạ
+no 	không
+not	không
+now	bây giờ, hiện nay, ngày nay
+number	số
+of	thuộc,của, ở
+off	tắt, ra khỏi, đứt
+old	cữ, già giặn
+on 	trên, ở trên
+one	một
+only	chỉ có một, duy nhất
+or	hoặc, hay là
+other	người khác,vật khác, cái khác
+our	của chúng ta, của chúng tôi
+out	ngoài, ở ngoài, ra ngoài
+over	lên, lên trên, bên trên
+own	của chính mình, của riêng mình, tự mình
+part	phần, bộ phận
+people	người (số nhiều), dân tộc
+place 	nơi, chỗ, địa điểm
+put	để, đặt, bỏ
+read	đọc, nghiên cứu
+right	quyền lợi,phía bên phải, tốt, đúng
+same	đều đều, đơn điệu, giống hệt, như nhau
+say	nói, lời nói
+see	thấy, trông thấy, nhìn thấy
+should	nên
+show	cho xem, cho thấy, trưng bày
+small	nhỏ, bé, chật
+so	như thế, như vậy
+some	một ít, một vài, dăm ba
+something	một điều gì đó, một việc gì đó, cái gì đó
+sound 	âm thanh, nghe như, nghe có vẻ
+still	vẫn, vẫn còn
+such	như thế, như vậy, như là
+take 	cầm, nắm, giữ
+tell	nói, nói lên, nói ra
+than	hơn(đễ diễn đạt sựu so sánh)
+that	người ấy, người đó, vật đó
+them	chúng, chúng nó, họ
+then	khi đó, lúc đó, sau đó
+there	ở nơi đó, tại nơi đó
+these	cái này, điều này, việc này
+they	chúng, chúng nó, họ
+thing	đồ, vật, thứ, điều
+think	nghĩ, suy nghĩ, ngẫm nghĩ
+this	cái này, điều này, việc này
+three	số ba
+time 	thời gian, thì giờ
+to 	theo hướng, hướng tới, đến
+together	cùng với, cùng nhau, lại với nhau
+too	cũng, quá
+two 	số hai
+us	chúng tôi, chúng ta
+use	dùng, sử dụng
+very	rất, lắm, hết sức
+want 	muốn, muốn nó, đòi hỏi
+water	nước, dung dịch nước
+way	đường, đường đi, lối đi
+we	chúng tôi, chúng ta
+well 	tốt, giỏi, hay
+what	gì, thế nào
+when	vào lúc nào, vào dịp nào, khi nào
+where	đâu, ở đâu, ở nơi nào
+which	gì, cái nào, người nào, ai (ngụ ý chọn lựa)
+while 	lúc, chốc, lát
+who	ai, người nào, kẻ nào
+why	tại sao, vì sao
+will 	sẽ (tương lai)
+with	với, cùng, cùng với
+word 	từ
+work	làm, làm việc
+world 	thế giới, toàn cầu
+write 	viết
+year	năm
+able	có năng lực, có tài
+add	thêm vào, làm tăng thêm
+against	chống lại, ngược lại, phản đối
+ago	trước đây, về trước
+almost	hầu như, gần như, suýt
+among	giữa, ở giữa, trong số
+animal	động vật, thú vật
+answer	trả lời, đáp lại, câu trả lời
+become	trở nên, trở thành
+behind	sau, ở đằng sau
+being	sự tồn tại
+better 	tốt hơn, khá hơn, hay hơn
+black	màu đen, màu tối, ảm đạm
+best 	tốt nhất, hay nhất, đẹp nhất, giỏi nhất
+body	thân thể, thân xác
+boy 	con trai
+brought	cầm lại, đem lại, mang lại

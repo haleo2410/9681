@@ -37,6 +37,8 @@ public class Word implements Serializable{
         this.word_explain = word_explain;
     }
    
+   public Word(){}
+   
     @Override
     public String toString(){
        return (this.getWord_target() + "\t" +this.getWord_explain());
