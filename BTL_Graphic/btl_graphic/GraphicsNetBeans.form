@@ -1,8 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+<Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
   <NonVisualComponents>
-    <Menu class="javax.swing.JMenuBar" name="JMenuBar">
+    <Container class="javax.swing.JPopupMenu" name="MouseMenu">
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+        <Property name="useNullLayout" type="boolean" value="true"/>
+      </Layout>
+      <SubComponents>
+        <MenuItem class="javax.swing.JMenuItem" name="DeleteMouseMenu">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Times New Roman" size="15" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Delete"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="DeleteMouseMenuActionPerformed"/>
+          </Events>
+        </MenuItem>
+      </SubComponents>
+    </Container>
+    <Menu class="javax.swing.JMenuBar" name="Menu">
       <SubComponents>
         <Menu class="javax.swing.JMenu" name="File">
           <Properties>
@@ -12,29 +31,66 @@
             <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="File.setMnemonic(KeyEvent.VK_F);"/>
           </AuxValues>
           <SubComponents>
-            <MenuItem class="javax.swing.JMenuItem" name="Add">
+            <MenuItem class="javax.swing.JMenuItem" name="ExitMenu">
               <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\Ha\Documents\GitHub\No_Name_OOP\BTL_Graphic\image\add.jpg"/>
+                <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+                  <KeyStroke key="Shift+E"/>
                 </Property>
-                <Property name="mnemonic" type="int" value="65"/>
-                <Property name="text" type="java.lang.String" value="Add"/>
+                <Property name="text" type="java.lang.String" value="Exit"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="AddActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ExitMenuActionPerformed"/>
               </Events>
-              <AuxValues>
-                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="ADD.setMnemonic(KeyEvent.VK_A);"/>
-              </AuxValues>
-            </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem1">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="New"/>
-              </Properties>
             </MenuItem>
           </SubComponents>
         </Menu>
         <Menu class="javax.swing.JMenu" name="Edit">
+          <Properties>
+            <Property name="mnemonic" type="int" value="69"/>
+            <Property name="text" type="java.lang.String" value="Edit"/>
+          </Properties>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="AddMenu">
+              <Properties>
+                <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+                  <KeyStroke key="Ctrl+A"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Add"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="AddMenuActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="DeleteMenu">
+              <Properties>
+                <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+                  <KeyStroke key="Ctrl+X"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Delete"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="DeleteMenuActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="History">
+              <Properties>
+                <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+                  <KeyStroke key="Shift+Ctrl+H"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Search History"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="RepairMenu">
+              <Properties>
+                <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+                  <KeyStroke key="Ctrl+R"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Repair"/>
+              </Properties>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="Help">
           <Properties>
             <Property name="text" type="java.lang.String" value="Help"/>
           </Properties>
@@ -51,7 +107,7 @@
     <Property name="name" type="java.lang.String" value="DICTIONARY" noResource="true"/>
   </Properties>
   <SyntheticProperties>
-    <SyntheticProperty name="menuBar" type="java.lang.String" value="JMenuBar"/>
+    <SyntheticProperty name="menuBar" type="java.lang.String" value="Menu"/>
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
     <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
   </SyntheticProperties>
@@ -70,7 +126,7 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="ManHinh" alignment="0" max="32767" attributes="0"/>
+          <Component id="ManHinh" min="-2" max="-2" attributes="0"/>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
@@ -97,44 +153,69 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Component id="jScrollPane2" pref="247" max="32767" attributes="0"/>
-                      <Component id="InputSearch" max="32767" attributes="0"/>
-                  </Group>
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
-                          <Component id="EXIT" min="-2" pref="43" max="-2" attributes="0"/>
-                      </Group>
-                      <Component id="TimKiem" alignment="1" max="32767" attributes="0"/>
-                      <Component id="LISTENSearch" alignment="1" max="32767" attributes="0"/>
-                      <Component id="ADD" alignment="1" max="32767" attributes="0"/>
-                      <Component id="RESET" alignment="1" max="32767" attributes="0"/>
-                      <Component id="REPAIR" max="32767" attributes="0"/>
-                      <Component id="DELETE" alignment="1" max="32767" attributes="0"/>
-                  </Group>
+              <Group type="102" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="jScrollPane1" max="32767" attributes="0"/>
-                      <Group type="102" attributes="0">
-                          <Component id="VietEng" min="-2" pref="247" max="-2" attributes="0"/>
-                          <EmptySpace max="32767" attributes="0"/>
-                          <Component id="LISTENOutputSearch" min="-2" pref="36" max="-2" attributes="0"/>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="ListenSearch" min="-2" pref="33" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
+                                  <Component id="InputSearch" min="-2" pref="260" max="-2" attributes="0"/>
+                                  <EmptySpace max="32767" attributes="0"/>
+                                  <Component id="Search" min="-2" pref="36" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                                  <Component id="jScrollPane3" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="jScrollPane2" alignment="0" pref="338" max="32767" attributes="0"/>
+                              </Group>
+                              <Component id="jLabel2" alignment="0" min="-2" pref="97" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace pref="17" max="32767" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Component id="ListenOut" min="-2" pref="37" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="Google" min="-2" pref="38" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="ADD" min="-2" pref="37" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="DELETE" min="-2" pref="38" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="FromYour" min="-2" pref="32" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="RESET" min="-2" pref="37" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="REPAIR" min="-2" pref="38" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="EngViet" min="-2" pref="176" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="EXIT" min="-2" pref="43" max="-2" attributes="0"/>
+                              </Group>
+                              <Component id="jScrollPane1" min="-2" pref="538" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="jButton2" min="-2" pref="200" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <EmptySpace min="-2" pref="54" max="-2" attributes="0"/>
+                                  <Component id="DICTIONARY" min="-2" pref="333" max="-2" attributes="0"/>
+                                  <EmptySpace max="32767" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="1" attributes="0">
+                                  <EmptySpace max="32767" attributes="0"/>
+                                  <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="timetoday" pref="151" max="32767" attributes="0"/>
+                              <Component id="datetoday" max="32767" attributes="0"/>
+                          </Group>
                       </Group>
                   </Group>
-              </Group>
-              <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace min="-2" pref="223" max="-2" attributes="0"/>
-                  <Component id="DICTIONARY" min="-2" pref="333" max="-2" attributes="0"/>
-                  <EmptySpace pref="258" max="32767" attributes="0"/>
-              </Group>
-              <Group type="102" alignment="1" attributes="0">
-                  <EmptySpace max="32767" attributes="0"/>
-                  <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -142,42 +223,44 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="DICTIONARY" min="-2" pref="61" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jButton2" alignment="0" min="-2" pref="82" max="-2" attributes="0"/>
                       <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="TimKiem" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="InputSearch" alignment="3" min="-2" pref="37" max="-2" attributes="0"/>
-                          </Group>
+                          <Component id="datetoday" min="-2" pref="27" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="timetoday" min="-2" pref="27" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
+                          <Component id="DICTIONARY" min="-2" pref="41" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="1" attributes="0">
-                              <Component id="LISTENOutputSearch" min="-2" max="-2" attributes="0"/>
-                              <Component id="VietEng" min="-2" max="-2" attributes="0"/>
-                          </Group>
                       </Group>
+                  </Group>
+                  <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="Search" max="32767" attributes="0"/>
+                      <Component id="ListenSearch" max="32767" attributes="0"/>
+                      <Component id="DELETE" alignment="0" max="32767" attributes="0"/>
+                      <Component id="EngViet" alignment="0" max="32767" attributes="0"/>
+                      <Component id="EXIT" alignment="0" max="32767" attributes="0"/>
+                      <Component id="REPAIR" alignment="0" max="32767" attributes="0"/>
+                      <Component id="ListenOut" max="32767" attributes="0"/>
+                      <Component id="Google" max="32767" attributes="0"/>
+                      <Component id="ADD" alignment="0" max="32767" attributes="0"/>
+                      <Component id="InputSearch" max="32767" attributes="0"/>
+                      <Component id="RESET" alignment="0" max="32767" attributes="0"/>
+                      <Component id="FromYour" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jScrollPane1" pref="509" max="32767" attributes="0"/>
                       <Group type="102" attributes="0">
-                          <Component id="LISTENSearch" min="-2" max="-2" attributes="0"/>
+                          <Component id="jScrollPane2" max="32767" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="ADD" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel2" min="-2" pref="21" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="RESET" min="-2" pref="35" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="DELETE" min="-2" pref="37" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="REPAIR" min="-2" pref="35" max="-2" attributes="0"/>
-                          <EmptySpace pref="217" max="32767" attributes="0"/>
-                          <Component id="EXIT" min="-2" pref="23" max="-2" attributes="0"/>
+                          <Component id="jScrollPane3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <Component id="jScrollPane1" max="32767" attributes="0"/>
-                      <Component id="jScrollPane2" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
@@ -188,15 +271,16 @@
         <Component class="javax.swing.JLabel" name="DICTIONARY">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Times New Roman" size="48" style="1"/>
+              <Font name="Times New Roman" size="50" style="1"/>
             </Property>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="0" green="33" red="33" type="rgb"/>
+              <Color blue="0" green="0" red="ff" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="DICTIONARY"/>
+            <Property name="toolTipText" type="java.lang.String" value="Cha&#x300;o m&#x1b0;&#x300;ng ba&#x323;n &#x111;&#xea;&#x301;n v&#x1a1;&#x301;i DICTIONARY &#x111;&#x1b0;&#x1a1;&#x323;c th&#x1b0;&#x323;c hi&#xea;&#x323;n b&#x1a1;&#x309;i No_Name team"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="TimKiem">
+        <Component class="javax.swing.JButton" name="Search">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -207,10 +291,10 @@
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="2" name="C:\Users\Ha\Documents\GitHub\No_Name_OOP\Baitaplon1\image\search.jpg"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Search"/>
+            <Property name="toolTipText" type="java.lang.String" value="Click va&#x300;o nu&#x301;t na&#x300;y &#x111;&#xea;&#x309; Ti&#x300;m ki&#xea;&#x301;m"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TimKiemActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="SearchActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="DELETE">
@@ -225,15 +309,15 @@
               <Color blue="33" green="0" red="33" type="rgb"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\Ha\Documents\GitHub\No_Name_OOP\Baitaplon1\image\delete.png"/>
+              <Image iconType="2" name="C:\Users\Ha\Documents\GitHub\No_Name_OOP\BTL_Graphic\image\delete2.png"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="DELETE"/>
+            <Property name="toolTipText" type="java.lang.String" value=""/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="DELETEActionPerformed"/>
           </Events>
           <AuxValues>
-            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="DELETE.setToolTipText(&quot;Click v&#xe0;o n&#xfa;t n&#xe0;y ho&#x1eb7;c &#x1ea5;n Alt+Delete &#x111;&#x1ec3; X&#xf3;a t&#x1eeb;&quot;);&#xa;DELETE.setMnemonic(KeyEvent.VK_DELETE);"/>
+            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="DELETE.setToolTipText(&quot;Click v&#xe0;o n&#xfa;t n&#xe0;y ho&#x1eb7;c &#x1ea5;n Ctrl+X &#x111;&#x1ec3; X&#xf3;a t&#x1eeb;&quot;);"/>
           </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="ADD">
@@ -250,15 +334,13 @@
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="2" name="C:\Users\Ha\Documents\GitHub\No_Name_OOP\Baitaplon1\image\add.jpg"/>
             </Property>
-            <Property name="mnemonic" type="int" value="65"/>
-            <Property name="text" type="java.lang.String" value=" ADD"/>
           </Properties>
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="ADDMouseClicked"/>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ADDActionPerformed"/>
           </Events>
           <AuxValues>
-            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="ADD.setToolTipText(&quot;Click v&#xe0;o n&#xfa;t n&#xe0;y ho&#x1eb7;c nh&#x1ea5;n Alt+A &#x111;&#x1ec3; Th&#xea;m T&#x1eeb; M&#x1edb;i&quot;);"/>
+            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="ADD.setToolTipText(&quot;Click v&#xe0;o n&#xfa;t n&#xe0;y ho&#x1eb7;c nh&#x1ea5;n Ctrl+A &#x111;&#x1ec3; Th&#xea;m T&#x1eeb; M&#x1edb;i&quot;);"/>
           </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="EXIT">
@@ -266,7 +348,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="13" style="1"/>
             </Property>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor" postCode="EXIT.setToolTipText(&quot;Click v&#xe0;o n&#xfa;t n&#xe0;y ho&#x1eb7;c &#x1ea5;n Alt+End &#x111;&#x1ec3; tho&#xe1;t kh&#x1ecf;i ch&#x1b0;&#x1a1;ng tr&#xec;nh&quot;);">
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor" postCode="EXIT.setToolTipText(&quot;Click v&#xe0;o n&#xfa;t n&#xe0;y ho&#x1eb7;c &#x1ea5;n Shift+E &#x111;&#x1ec3; tho&#xe1;t kh&#x1ecf;i ch&#x1b0;&#x1a1;ng tr&#xec;nh&quot;);">
               <Color blue="33" green="0" red="33" type="rgb"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
@@ -278,30 +360,6 @@
           </Events>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JButton()"/>
-            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="EXIT.setMnemonic(KeyEvent.VK_END);"/>
-          </AuxValues>
-        </Component>
-        <Component class="javax.swing.JButton" name="RESET">
-          <Properties>
-            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="ff" green="ff" red="ff" type="rgb"/>
-            </Property>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Times New Roman" size="13" style="1"/>
-            </Property>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="33" green="0" red="33" type="rgb"/>
-            </Property>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\Ha\Documents\GitHub\No_Name_OOP\Baitaplon1\image\reset.png"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value=" RESET"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="RESETActionPerformed"/>
-          </Events>
-          <AuxValues>
-            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RESET.setToolTipText(&quot;Click v&#xe0;o n&#xfa;t n&#xe0;y ho&#x1eb7;c &#x1ea5;n Alt+F5 &#x111;&#x1ec3; l&#xe0;m m&#x1edb;i&quot;);&#xa;RESET.setMnemonic(KeyEvent.VK_F5);"/>
           </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="REPAIR">
@@ -318,47 +376,14 @@
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="2" name="C:\Users\Ha\Documents\GitHub\No_Name_OOP\Baitaplon1\image\repair.png"/>
             </Property>
-            <Property name="text" type="java.lang.String" value=" REPAIR"/>
           </Properties>
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="REPAIRMouseClicked"/>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="REPAIRActionPerformed"/>
           </Events>
           <AuxValues>
-            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="REPAIR.setToolTipText(&quot;Click v&#xe0;o n&#xfa;t n&#xe0;y ho&#x1eb7;c &#x1ea5;n Alt+R &#x111;&#x1ec3; S&#x1eed;a t&#x1eeb;&quot;);&#xa;REPAIR.setMnemonic(KeyEvent.VK_R);"/>
+            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="REPAIR.setToolTipText(&quot;Click v&#xe0;o n&#xfa;t n&#xe0;y ho&#x1eb7;c &#x1ea5;n Ctrl+R &#x111;&#x1ec3; S&#x1eed;a t&#x1eeb;&quot;);"/>
           </AuxValues>
-        </Component>
-        <Component class="javax.swing.JButton" name="LISTENOutputSearch">
-          <Properties>
-            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="ff" green="ff" red="ff" type="rgb"/>
-            </Property>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\Ha\Documents\GitHub\No_Name_OOP\Baitaplon1\image\volum.png"/>
-            </Property>
-            <Property name="toolTipText" type="java.lang.String" value="Nghe"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="LISTENOutputSearchActionPerformed"/>
-          </Events>
-          <AuxValues>
-            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="LISTENOutputSearch.setToolTipText(&quot;Click v&#xe0;o n&#xfa;t n&#xe0;y &#x111;&#x1ec3; Nghe&quot;);"/>
-          </AuxValues>
-        </Component>
-        <Component class="javax.swing.JRadioButton" name="VietEng">
-          <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Times New Roman" size="24" style="1"/>
-            </Property>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="0" green="33" red="33" type="rgb"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="Vietnamese - English"/>
-            <Property name="toolTipText" type="java.lang.String" value="Click n&#xfa;t n&#xe0;y &#x111;&#x1ec3; chuy&#x1ec3;n t&#x1eeb; Vi&#x1ec7;t - Anh"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="VietEngActionPerformed"/>
-          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="InputSearch">
           <Properties>
@@ -379,6 +404,7 @@
           <Events>
             <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="InputSearchFocusGained"/>
             <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="InputSearchFocusLost"/>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="InputSearchMouseClicked"/>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="InputSearchActionPerformed"/>
             <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="InputSearchKeyReleased"/>
           </Events>
@@ -396,6 +422,9 @@
                   <Color blue="cc" green="ff" red="ff" type="rgb"/>
                 </Property>
                 <Property name="columns" type="int" value="20"/>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Times New Roman" size="18" style="3"/>
+                </Property>
                 <Property name="rows" type="int" value="5"/>
               </Properties>
             </Component>
@@ -415,10 +444,16 @@
                     <LineBorder/>
                   </Border>
                 </Property>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Times New Roman" size="18" style="0"/>
+                </Property>
                 <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
                   <StringArray count="0"/>
                 </Property>
               </Properties>
+              <BindingProperties>
+                <BindingProperty name="componentPopupMenu" source="MouseMenu" target="ListDS" targetPath="componentPopupMenu" updateStrategy="0" immediately="false"/>
+              </BindingProperties>
               <Events>
                 <EventHandler event="ancestorAdded" listener="javax.swing.event.AncestorListener" parameters="javax.swing.event.AncestorEvent" handler="ListDSAncestorAdded"/>
                 <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="ListDSMouseClicked"/>
@@ -429,7 +464,7 @@
             </Component>
           </SubComponents>
         </Container>
-        <Component class="javax.swing.JButton" name="LISTENSearch">
+        <Component class="javax.swing.JButton" name="ListenSearch">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -440,12 +475,11 @@
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="2" name="C:\Users\Ha\Documents\GitHub\No_Name_OOP\BTL_Graphic\image\volum.png"/>
             </Property>
-            <Property name="mnemonic" type="int" value="76"/>
-            <Property name="text" type="java.lang.String" value="LISTEN"/>
-            <Property name="toolTipText" type="java.lang.String" value="Nghe"/>
+            <Property name="mnemonic" type="int" value="49"/>
+            <Property name="toolTipText" type="java.lang.String" value="Click ho&#x103;&#x323;c &#xe2;&#x301;n Alt+1 &#x111;&#xea;&#x309; Nghe"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="LISTENSearchActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ListenSearchActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel1">
@@ -457,6 +491,140 @@
               <Color blue="cc" green="0" red="cc" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="By No_Name Team"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton2">
+          <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="2" name="C:\Users\Ha\Documents\GitHub\No_Name_OOP\BTL_Graphic\image\book.jpg"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JComboBox" name="EngViet">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="cc" green="ff" red="ff" type="rgb"/>
+            </Property>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Times New Roman" size="18" style="1"/>
+            </Property>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="new javax.swing.DefaultComboBoxModel&lt;&gt;(new String[] { &quot; English - Vietnamese&quot; , &quot; Vietnamese - English&quot; })" type="code"/>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="EngVietActionPerformed"/>
+          </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JButton" name="ListenOut">
+          <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="2" name="C:\Users\Ha\Documents\GitHub\No_Name_OOP\BTL_Graphic\image\volum - Copy.png"/>
+            </Property>
+            <Property name="mnemonic" type="int" value="50"/>
+            <Property name="toolTipText" type="java.lang.String" value="Click ho&#x103;&#x323;c &#xe2;&#x301;n Alt+2 &#x111;&#xea;&#x309; Nghe"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ListenOutActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="Google">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="2" name="C:\Users\Ha\Documents\GitHub\No_Name_OOP\BTL_Graphic\image\google.jpg"/>
+            </Property>
+            <Property name="mnemonic" type="int" value="71"/>
+            <Property name="toolTipText" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="&quot;Click ho&#x103;&#x323;c &#xe2;&#x301;n Alt+G &#x111;&#xea;&#x309; Di&#x323;ch Online tr&#xea;n Google  Translate&quot;" type="code"/>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="GoogleActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="RESET">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="2" name="C:\Users\Ha\Documents\GitHub\No_Name_OOP\BTL_Graphic\image\reset.png"/>
+            </Property>
+            <Property name="mnemonic" type="int" value="83"/>
+            <Property name="toolTipText" type="java.lang.String" value="Click ho&#x103;&#x323;c &#xe2;&#x301;n Alt+S &#x111;&#xea;&#x309; La&#x300;m m&#x1a1;&#x301;i"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="RESETActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="datetoday">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Times New Roman" size="18" style="1"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="99" green="0" red="0" type="rgb"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="day"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="timetoday">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Times New Roman" size="18" style="1"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="99" green="0" red="0" type="rgb"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="time"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="FromYour">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="2" name="C:\Users\Ha\Documents\GitHub\No_Name_OOP\BTL_Graphic\image\sao.jpg"/>
+            </Property>
+            <Property name="mnemonic" type="int" value="89"/>
+            <Property name="toolTipText" type="java.lang.String" value="Click ho&#x103;&#x323;c &#xe2;&#x301;n Alt+Y &#x111;&#xea;&#x309; l&#x1b0;u T&#x1b0;&#x300; cu&#x309;a ba&#x323;n"/>
+          </Properties>
+        </Component>
+        <Container class="javax.swing.JScrollPane" name="jScrollPane3">
+          <AuxValues>
+            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+          </AuxValues>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JList" name="ListFromYour">
+              <Properties>
+                <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection code="new javax.swing.AbstractListModel&lt;String&gt;() {&#xa;    String[] strings = { };&#xa;    public int getSize() { return strings.length; }&#xa;    public String getElementAt(int i) { return strings[i]; }&#xa;}" type="code"/>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="ancestorAdded" listener="javax.swing.event.AncestorListener" parameters="javax.swing.event.AncestorEvent" handler="ListFromYourAncestorAdded"/>
+              </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+              </AuxValues>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Component class="javax.swing.JLabel" name="jLabel2">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Times New Roman" size="18" style="1"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="From your:"/>
           </Properties>
         </Component>
       </SubComponents>
